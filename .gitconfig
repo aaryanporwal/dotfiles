@@ -1,0 +1,17 @@
+[user]
+	name = Aaryan
+	email = aaryanporwal2233@gmail.com
+	signingkey = B8C0EE3C596C1CB0C8C49E757F946A04DDF2F6EC
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[core]
+	excludesfile = /Users/aaryan/.gitignore
